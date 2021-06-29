@@ -1,6 +1,7 @@
 package ucf.assignments;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
@@ -9,36 +10,46 @@ public class ListWindowControllers {
     public TextField taskName;
     public TextField taskDescription;
 
+    @FXML
     public void showAllButtonClicked(ActionEvent actionEvent) {
     }
-
-    public void showCompletedItemsButtonClicked(ActionEvent actionEvent) {
+    @FXML
+    public void showCompleteItemsButtonClicked(ActionEvent actionEvent) {
     }
 
-    public void showIncompletedItemsButtonClicked(ActionEvent actionEvent) {
+    @FXML
+    public void showIncompleteItemsButtonClicked(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void downloadSingleListButtonClicked(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void backToMainWindowButtonClicked(MouseEvent mouseEvent) {
     }
 
+    @FXML
     public void getListName(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void getTaskName(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void getTaskDescription(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void addItemButtonClicked(MouseEvent mouseEvent) {
     }
 
+    @FXML
     public void doneButtonClicked(ActionEvent actionEvent) {
     }
 
+    @FXML
     public void deleteItemButtonClicked(MouseEvent mouseEvent) {
     }
 }

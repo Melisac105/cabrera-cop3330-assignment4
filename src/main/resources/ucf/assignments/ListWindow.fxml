@@ -18,12 +18,12 @@
       <MenuButton layoutX="451.0" layoutY="8.0" mnemonicParsing="false" text="Show">
         <items>
             <MenuItem mnemonicParsing="false" onAction="#showAllButtonClicked" text="All" />
-          <MenuItem mnemonicParsing="false" onAction="#showCompletedItemsButtonClicked" text="Completed Items" />
-          <MenuItem mnemonicParsing="false" onAction="#showIncompletedItemsButtonClicked" text="Incompleted Items" />
+          <MenuItem mnemonicParsing="false" onAction="#showCompleteItemsButtonClicked" text="Complete Items" />
+          <MenuItem mnemonicParsing="false" onAction="#showIncompleteItemsButtonClicked" text="Incomplete Items" />
         </items>
       </MenuButton>
       <Button layoutX="526.0" layoutY="8.0" mnemonicParsing="false" onAction="#downloadSingleListButtonClicked" text="Download" />
-      <TextField editable="false" layoutX="14.0" layoutY="7.0" onMouseClicked="#backToMainWindowButtonClicked" prefHeight="28.0" prefWidth="161.0" style="-fx-background-image: url('https://icons.iconarchive.com/icons/iconsmind/outline/128/Arrow-Back-icon.png')url('https://icons.iconarchive.com/icons/iconsmind/outline/128/Arrow-Back-icon.png'); -fx-background-repeat: no-repeat; -fx-background-position: left center; -fx-background-color: #ffffff00;" text="Lists" />
+      <TextField editable="false" layoutX="14.0" layoutY="7.0" onMouseClicked="#backToMainWindowButtonClicked" prefHeight="28.0" prefWidth="161.0" style="-fx-background-image: url('https://icons.iconarchive.com/icons/iconsmind/outline/128/Arrow-Back-icon.png'); -fx-background-repeat: no-repeat; -fx-background-position: left center; -fx-background-color: #ffffff00;" text="Lists" />
       <ListView editable="true" layoutY="36.0" prefHeight="419.0" prefWidth="613.0" />
       <TextField fx:id="listName" layoutX="14.0" layoutY="42.0" onAction="#getListName" promptText="Tittle" style="-fx-border-color: #ffffff00#ffffff00; -fx-background-color: #ffffff00#ffffff00;">
          <font>
