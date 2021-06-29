@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="453.0" prefWidth="613.0" style="-fx-background-color: #e0e0e0#e0e0e0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ListWindowControllers">
+   <children>
+      <MenuButton layoutX="451.0" layoutY="8.0" mnemonicParsing="false" text="Show">
+        <items>
+            <MenuItem mnemonicParsing="false" onAction="#showAllButtonClicked" text="All" />
+          <MenuItem mnemonicParsing="false" onAction="#showCompletedItemsButtonClicked" text="Completed Items" />
+          <MenuItem mnemonicParsing="false" onAction="#showIncompletedItemsButtonClicked" text="Incompleted Items" />
+        </items>
+      </MenuButton>
+      <Button layoutX="526.0" layoutY="8.0" mnemonicParsing="false" onAction="#downloadSingleListButtonClicked" text="Download" />
+      <TextField editable="false" layoutX="14.0" layoutY="7.0" onMouseClicked="#backToMainWindowButtonClicked" prefHeight="28.0" prefWidth="161.0" style="-fx-background-image: url('https://icons.iconarchive.com/icons/iconsmind/outline/128/Arrow-Back-icon.png')url('https://icons.iconarchive.com/icons/iconsmind/outline/128/Arrow-Back-icon.png'); -fx-background-repeat: no-repeat; -fx-background-position: left center; -fx-background-color: #ffffff00;" text="Lists" />
+      <ListView editable="true" layoutY="36.0" prefHeight="419.0" prefWidth="613.0" />
+      <TextField fx:id="listName" layoutX="14.0" layoutY="42.0" onAction="#getListName" promptText="Tittle" style="-fx-border-color: #ffffff00#ffffff00; -fx-background-color: #ffffff00#ffffff00;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="taskName" layoutX="43.0" layoutY="84.0" onAction="#getTaskName" promptText="New Task" style="-fx-background-color: #ffffff00#ffffff00;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="taskDescription" layoutX="58.0" layoutY="107.0" onAction="#getTaskDescription" promptText="Description" style="-fx-background-color: #ffffff00#ffffff00;" />
+      <DatePicker layoutX="64.0" layoutY="132.0" opacity="0.8" prefHeight="28.0" prefWidth="112.0" promptText="Due Date" style="-fx-background-color: #e0e0e0#e0e0e0 #e0e0e0#e0e0e0; -fx-border-color: #e0e0e0#e0e0e0 #e0e0e0#e0e0e0;">
+         <opaqueInsets>
+            <Insets bottom="100.0" left="100.0" right="100.0" />
+         </opaqueInsets>
+      </DatePicker>
+      <CheckBox layoutX="28.0" layoutY="89.0" mnemonicParsing="false" />
+      <ImageView fitHeight="42.0" fitWidth="55.0" layoutX="14.0" layoutY="402.0" onMouseClicked="#addItemButtonClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Downloads/add_circle-black-ios/outline_add_circle_black_48pt.xcassets/outline_add_circle_black_48pt.imageset/outline_add_circle_black_48pt_3x.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="552.0" layoutY="411.0" mnemonicParsing="false" onAction="#doneButtonClicked" text="Done" />
+      <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="506.0" layoutY="95.0" onMouseClicked="#deleteItemButtonClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Downloads/delete-black-ios/outline_delete_black_72pt.xcassets/outline_delete_black_72pt.imageset/outline_delete_black_72pt_3x.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
