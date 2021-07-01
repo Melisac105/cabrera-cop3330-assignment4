@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'application'
-    id 'org.openjfx.javafxplugin' version '0.0.9'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
 }
 
 group 'org.example'
@@ -26,3 +26,5 @@ javafx {
 }
 
 mainClassName = 'ucf.assignments.ToDoListApp'
+
+

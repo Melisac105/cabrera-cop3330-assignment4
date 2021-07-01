@@ -6,9 +6,11 @@ class ToDoListApp {
     start()
 }
 
-class ListController {}
+class MainWindowControllers {}
+class ListWindowControllers {}
 
 javafx.Application <|-- ToDoListApp
 
-ToDoListApp - ListController
+ToDoListApp -- ListWindowControllers
+ToDoListApp -- MainWindowControllers
 @enduml

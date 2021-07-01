@@ -13,18 +13,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="453.0" prefWidth="613.0" style="-fx-background-color: #e0e0e0#e0e0e0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ListWindowControllers">
+<AnchorPane prefHeight="453.0"
+            prefWidth="613.0"
+            style="-fx-background-color: #6f79a8;"
+            xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ucf.assignments.ListWindowControllers">
    <children>
-      <MenuButton layoutX="451.0" layoutY="8.0" mnemonicParsing="false" text="Show">
+      <MenuButton layoutX="451.0" layoutY="8.0" mnemonicParsing="false" style="-fx-background-color: #ede7f6;" text="Show">
         <items>
             <MenuItem mnemonicParsing="false" onAction="#showAllButtonClicked" text="All" />
           <MenuItem mnemonicParsing="false" onAction="#showCompleteItemsButtonClicked" text="Complete Items" />
           <MenuItem mnemonicParsing="false" onAction="#showIncompleteItemsButtonClicked" text="Incomplete Items" />
         </items>
       </MenuButton>
-      <Button layoutX="526.0" layoutY="8.0" mnemonicParsing="false" onAction="#downloadSingleListButtonClicked" text="Download" />
+      <Button layoutX="526.0" layoutY="8.0" mnemonicParsing="false" onAction="#downloadSingleListButtonClicked" style="-fx-background-color: #ede7f6;" text="Download" />
       <TextField editable="false" layoutX="14.0" layoutY="7.0" onMouseClicked="#backToMainWindowButtonClicked" prefHeight="28.0" prefWidth="161.0" style="-fx-background-image: url('https://icons.iconarchive.com/icons/iconsmind/outline/128/Arrow-Back-icon.png'); -fx-background-repeat: no-repeat; -fx-background-position: left center; -fx-background-color: #ffffff00;" text="Lists" />
-      <ListView editable="true" layoutY="36.0" prefHeight="419.0" prefWidth="613.0" />
+      <ListView editable="true" layoutY="39.0" prefHeight="415.0" prefWidth="613.0" style="-fx-background-color: #ede7f6;" />
       <TextField fx:id="listName" layoutX="14.0" layoutY="42.0" onAction="#getListName" promptText="Tittle" style="-fx-border-color: #ffffff00#ffffff00; -fx-background-color: #ffffff00#ffffff00;">
          <font>
             <Font size="20.0" />
@@ -36,7 +41,7 @@
          </font>
       </TextField>
       <TextField fx:id="taskDescription" layoutX="58.0" layoutY="107.0" onAction="#getTaskDescription" promptText="Description" style="-fx-background-color: #ffffff00#ffffff00;" />
-      <DatePicker layoutX="64.0" layoutY="132.0" opacity="0.8" prefHeight="28.0" prefWidth="112.0" promptText="Due Date" style="-fx-background-color: #e0e0e0#e0e0e0 #e0e0e0#e0e0e0; -fx-border-color: #e0e0e0#e0e0e0 #e0e0e0#e0e0e0;">
+      <DatePicker layoutX="64.0" layoutY="132.0" opacity="0.8" prefHeight="28.0" prefWidth="112.0" promptText="Due Date" style="-fx-background-color: #ffffff; -fx-border-color: #e0e0e0#e0e0e0 #e0e0e0#e0e0e0;">
          <opaqueInsets>
             <Insets bottom="100.0" left="100.0" right="100.0" />
          </opaqueInsets>
