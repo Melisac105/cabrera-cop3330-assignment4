@@ -32,12 +32,8 @@ public class ListWindowControllers {
     }
 
     @FXML
-    public void backToMainWindowButtonClicked(MouseEvent mouseEvent) {
-    }
-
-    @FXML
     public void getListName(ActionEvent actionEvent) {
-        
+
     }
 
     @FXML
@@ -49,8 +45,8 @@ public class ListWindowControllers {
     }
 
     @FXML
-    public void addItemButtonClicked(MouseEvent mouseEvent) {
-        Scanner itemName = new Scanner(System.in);
+    public void addItemButtonClicked(ActionEvent actionEvent) {
+
     }
 
     @FXML
@@ -58,6 +54,6 @@ public class ListWindowControllers {
     }
 
     @FXML
-    public void deleteItemButtonClicked(MouseEvent mouseEvent) {
+    public void deleteItemButtonClicked(ActionEvent actionEvent) {
     }
 }

@@ -17,9 +17,6 @@ import java.io.IOException;
 public class MainWindowControllers {
     public TextField listName;
 
-    @FXML
-    private Button addListButton;
-
     public void addListButtonClicked(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ListWindow.fxml"));
         Parent root = fxmlLoader.load();
@@ -37,7 +34,7 @@ public class MainWindowControllers {
     }
 
     @FXML
-    public void deleteListButtonClicked(MouseEvent mouseEvent) {
+    public void deleteListButtonClicked(ActionEvent actionEvent) {
     }
 
     @FXML
