@@ -6,10 +6,14 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
+import java.util.Scanner;
+
 public class ListWindowControllers {
     public TextField listName;
     public TextField taskName;
     public TextField taskDescription;
+
+
 
 
     @FXML
@@ -33,12 +37,7 @@ public class ListWindowControllers {
 
     @FXML
     public void getListName(ActionEvent actionEvent) {
-//        listName.setOnAction(new EventHandler<ActionEvent>() {
-//            @Override
-//            public void handle(ActionEvent event) {
-//                listName.getText().trim();
-//            }
-//        });
+        
     }
 
     @FXML
@@ -51,6 +50,7 @@ public class ListWindowControllers {
 
     @FXML
     public void addItemButtonClicked(MouseEvent mouseEvent) {
+        Scanner itemName = new Scanner(System.in);
     }
 
     @FXML
