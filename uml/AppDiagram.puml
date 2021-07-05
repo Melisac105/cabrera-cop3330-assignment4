@@ -2,15 +2,64 @@
 'https://plantuml.com/sequence-diagram
 
 class ToDoListApp {
-    main()
-    start()
+    + main()
+    + start()
 }
 
-class MainWindowControllers {}
-class ListWindowControllers {}
+class MainWindowControllers {
+    + listName : TextField
+
+    + addListButtonClicked()
+    + deleteListButtonClicked()
+    + uploadListsButtonClicked()
+    + downloadAllListsButtonClicked()
+    + addNewToDoList()
+    + removeToDoList()
+}
+
+class ListWindowControllers {
+    + listName : TextField
+    + taskName : TextField
+    + taskDescription : TextField
+
+    + showAllButtonClicked()
+    + showCompleteItemsButtonClicked()
+    + showIncompleteItemsButtonClicked()
+    + downloadSingleListButtonClicked()
+    + addItemButtonClicked()
+    + doneButtonClicked()
+    + deleteItemButtonClicked()
+    + editDescription()
+    + editDueDate()
+    + markAnItemComplete()
+}
+
+class Item {
+    - description : String
+    - dueDate : String
+
+    + getDescription()
+    + setDescription()
+    + getDueDate()
+    + setDueDate()
+}
+
+class ToDoList {
+    - title : String
+    - capacity : int
+
+    + toDoList()
+    + getTitle()
+    + getCapacity()
+    + setTitle()
+    + setCapacity()
+}
 
 javafx.Application <|-- ToDoListApp
 
-ToDoListApp -- ListWindowControllers
-ToDoListApp -- MainWindowControllers
+ToDoListApp <-- ListWindowControllers
+ToDoListApp <- MainWindowControllers
+ToDoList <- Item
+ListWindowControllers <-- ToDoList
+
 @enduml

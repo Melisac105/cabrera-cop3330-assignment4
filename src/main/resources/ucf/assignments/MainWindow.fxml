@@ -19,7 +19,7 @@
       </Label>
       <AnchorPane focusTraversable="true" layoutY="51.0" prefHeight="352.0" prefWidth="606.0" style="-fx-background-color: #ede7f6;">
          <children>
-            <TextField fx:id="listName" layoutX="14.0" layoutY="14.0" onAction="#printListName" promptText="List Name" style="-fx-border-color: #ffffff00#ffffff00;" visible="false">
+            <TextField fx:id="listName" layoutX="14.0" layoutY="14.0" promptText="List Name" style="-fx-border-color: #ffffff00#ffffff00;" visible="false">
                <font>
                   <Font size="14.0" />
                </font>
