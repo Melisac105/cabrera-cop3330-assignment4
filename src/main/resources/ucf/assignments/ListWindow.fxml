@@ -5,8 +5,8 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -15,14 +15,7 @@
 
 <AnchorPane prefHeight="453.0" prefWidth="613.0" style="-fx-background-color: #6f79a8;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ListWindowControllers">
    <children>
-      <MenuButton layoutX="451.0" layoutY="8.0" mnemonicParsing="false" style="-fx-background-color: #ede7f6;" text="Show">
-        <items>
-            <MenuItem mnemonicParsing="false" onAction="#showAllButtonClicked" text="All" />
-          <MenuItem mnemonicParsing="false" onAction="#showCompleteItemsButtonClicked" text="Complete Items" />
-          <MenuItem mnemonicParsing="false" onAction="#showIncompleteItemsButtonClicked" text="Incomplete Items" />
-        </items>
-      </MenuButton>
-      <Button layoutX="526.0" layoutY="8.0" mnemonicParsing="false" onAction="#downloadSingleListButtonClicked" style="-fx-background-color: #ede7f6;" text="Download" />
+      <Button layoutX="526.0" layoutY="8.0" mnemonicParsing="false" onAction="#downloadSingleListButtonClicked" text="Download" />
       <ListView editable="true" layoutY="42.0" prefHeight="415.0" prefWidth="613.0" style="-fx-background-color: #ede7f6;" />
       <TextField fx:id="listName" layoutX="15.0" promptText="Tittle" style="-fx-border-color: #ffffff00#ffffff00; -fx-background-color: #ffffff00#ffffff00;">
          <font>
@@ -59,5 +52,12 @@
                </image>
             </ImageView>
          </graphic></Button>
+      <SplitMenuButton layoutX="438.0" layoutY="8.0" mnemonicParsing="false" text="Show">
+        <items>
+            <MenuItem mnemonicParsing="false" onAction="#showAllButtonClicked" text="All" />
+          <MenuItem mnemonicParsing="false" onAction="#showCompleteItemsButtonClicked" text="Complete Items" />
+          <MenuItem mnemonicParsing="false" onAction="#showIncompleteItemsButtonClicked" text="Incomplete Items" />
+        </items>
+      </SplitMenuButton>
    </children>
 </AnchorPane>
