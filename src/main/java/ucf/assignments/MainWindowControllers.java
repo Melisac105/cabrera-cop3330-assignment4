@@ -57,29 +57,6 @@ public class MainWindowControllers {
         //it will also disable todolist from window of todolists too
     }
 
-    public void displayAllItems() {
-        //get items from todolist
-        //display all items to screen
-    }
-
-    public void displayIncompleteItems() {
-        //get items from todolist
-        //check which items are incomplete
-        //display incomplete items to screen
-    }
-
-    public void displayCompleteItems() {
-        //get items from todolist
-        //check which items are complete
-        //display complete items to screen
-    }
-
-    public void saveAllItemsSingleToDoList() {
-        //this method will be called when user click save all
-        //all items of a single todolist will be get
-        //all items of todolist will be written to a file
-    }
-
     public void saveAllToDoLists() {
         //loop through all the todolists
         //create text files for each todolist
