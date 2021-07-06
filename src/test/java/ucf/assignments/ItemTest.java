@@ -35,4 +35,19 @@ class ItemTest {
         //set item object due date
         //assert equals
     }
+
+
+    @Test
+    void isComplete() {
+        //set expected boolean value
+        //assert expected equals to actual value
+    }
+
+    @Test
+    void setComplete() {
+        //set expected boolean value
+        //create Item object
+        //set item object isComplete value
+        //assert equals
+    }
 }

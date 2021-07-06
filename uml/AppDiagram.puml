@@ -15,6 +15,13 @@ class MainWindowControllers {
     + downloadAllListsButtonClicked()
     + addNewToDoList()
     + removeToDoList()
+    + displayAllItems()
+    + displayIncompleteItems()
+    + displayCompleteItems()
+    + saveAllItemsSingleToDoList()
+    + saveAllToDoLists()
+    + loadSingleToDoList()
+    + loadMultipleToDoLists()
 }
 
 class ListWindowControllers {
@@ -29,30 +36,40 @@ class ListWindowControllers {
     + addItemButtonClicked()
     + doneButtonClicked()
     + deleteItemButtonClicked()
-    + editDescription()
-    + editDueDate()
-    + markAnItemComplete()
+
 }
 
 class Item {
     - description : String
     - dueDate : String
+    - isComplete : boolean
 
     + getDescription()
     + setDescription()
     + getDueDate()
     + setDueDate()
+    + isComplete()
+    + setComplete()
 }
 
 class ToDoList {
     - title : String
     - capacity : int
+    + count : int
+    + items : ArrayList<>
 
     + toDoList()
     + getTitle()
     + getCapacity()
     + setTitle()
     + setCapacity()
+    + editTitle()
+    + addItem()
+    + removeItem()
+    + editDescription()
+    + editDueDate()
+    + markAnItemComplete()
+    + getItems()
 }
 
 javafx.Application <|-- ToDoListApp

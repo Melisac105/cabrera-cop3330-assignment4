@@ -74,20 +74,4 @@ public class ListWindowControllers {
         //then the updated list will be shown to user
     }
 
-    public void editDescription(Item i, String str){
-        //this method will be passed an item and its new description
-        //this method will update the description of the task provided
-    }
-
-    public void editDueDate(Item i , String str){
-        //this method will be passed an item and its new due date
-        //this method will update the due date of the task provided
-    }
-
-    public void markAnItemComplete(Item i){
-        //this method will be passed an item
-        //it will mark it complete
-        //by changing boolean value
-
-    }
 }
